@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/* Navbar */
+.navbar {
+    min-height: 5rem;
+    /* Prevents overflow when mobile menu opens */
+    background-color: white;
+}
+
+.navbar-brand {
+    color: #fe424d !important;
+    /* Overrides Bootstrap default brand color */
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer styling */
+.f-info {
+    text-align: center;
+    display: flex;
+    min-height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* Fixed: 'space-evenly' is not valid for align-items */
+}
+
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links {
+    width: 100%;
+}
+
+.f-info-socials {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 20rem;
+
+}
+
+.card-body {
+    padding: 0 !important;
+
+}
+
+.card-text p {
+    font-weight: 400;
+}
+
+/* Ensure the document takes the full height */
+html,
+body {
+    height: 100%;
+}
+
+/* Make body a vertical flex container */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Allow the main content container to expand and push the footer down */
+.container {
+    flex: 1;
+}
+
+.navbar {
+    min-height: 5rem;
+    background-color: white;
+    z-index: 1000;
+    /* Keeps navbar above cards and images when scrolling */
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+
+/* card effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* Card hover overlay */
+.card-img-overlay {
+    opacity: 0;
+    height: 20rem;
+    /* Same height as your .card-img-top */
+    border-radius: 1rem;
+    /* Same border radius as your image */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+
+}
+
+.add-btn {
+    background-color: red;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: red;
+    border: none !important;
+}
